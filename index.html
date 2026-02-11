@@ -10,22 +10,28 @@
 
 <body>
     <div class="shell">
+        <div id="desktop"></div>
         <div id="icon">App</div>
         <div id="taskbar">
             <div id="apps"></div>
         </div>
-        <div class="window" id="win">
-            <div class="titlebar">
-                <span>App</span>
-                <div class="controls">
-                    <span class="min" id="min"></span>
-                    <span class="max" id="max"></span>
-                    <span class="close" id="close"></span>
+
+        <template id="win">
+            <div class="window">
+                <div class="titlebar">
+                    <span class="app-title">App</span>
+                    <div class="controls">
+                        <span class="min"></span>
+                        <span class="max"></span>
+                        <span class="close"></span>
+                    </div>
                 </div>
+                <iframe class="content"></iframe>
             </div>
-            <iframe src="https://blockaway.net/" frameborder="0" class="content"></iframe>
-        </div>
+        </template>
+
     </div>
 </body>
+
 
 </html>
