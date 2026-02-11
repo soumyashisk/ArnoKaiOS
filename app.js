@@ -23,6 +23,10 @@ function createWindow(title, url) {
 
     let maximized = false;
 
+    window.style.top = "100px";
+    window.style.left = "200px"
+
+
     const taskBtn = document.createElement("div");
     taskBtn.className = "task-app active";
     taskBtn.innerText = title;

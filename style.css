@@ -73,8 +73,6 @@ body {
 
 .window {
     position: absolute;
-    top: 120px;
-    left: 120px;
     width: 320px;
     height: 220px;
     background: var(--bg);
